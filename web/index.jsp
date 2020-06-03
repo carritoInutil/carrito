@@ -37,7 +37,7 @@ body,td,th {
           <br><br>
         <td width="131">Usuario</td>
         <td width="489"><input type="text" name="txtUsuario" id="txtUsuario" /></td>
-        <td rowspan="3"><a href="registrar.jsp"><img src="img/registrate.png" width="250" height="100"/></a></td>
+        
       </tr>
         <br>
         <tr>
@@ -55,7 +55,7 @@ body,td,th {
     
         <br><br> </td>
   </tr>
-  
+  <a href="registrar.jsp"><img src="img/registrate.png" width="250" height="100"/></a>
       <tr>
     <td colspan="2" bgcolor="#FF0000"><div align="center"><strong><span class="Estilo2">JGC - 200121115</span></strong></div></td>
   </tr>

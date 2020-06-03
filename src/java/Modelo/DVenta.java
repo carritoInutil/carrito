@@ -9,12 +9,27 @@ package Modelo;
  *
  * @author hp
  */
-public class DVenta {
+public class DVenta extends Registro {
+    
+    /**
+     * Default constructor
+     */
+    public DVenta() {
+    }
+
+    public DVenta(String id) {
+        super(id);
+    }
+
+    /**
+     * 
+     */
+    
     private int id_dventa;
     private int cantidad;
-    private DProducto producto;
+    private int producto;
 
-    public DVenta(int id_dventa, int cantidad, DProducto producto) {
+    public DVenta(int id_dventa, int cantidad, int producto) {
         this.id_dventa = id_dventa;
         this.cantidad = cantidad;
         this.producto = producto;
@@ -36,11 +51,11 @@ public class DVenta {
         this.cantidad = cantidad;
     }
 
-    public DProducto getProducto() {
+    public int getProducto() {
         return producto;
     }
 
-    public void setProducto(DProducto producto) {
+    public void setProducto(int producto) {
         this.producto = producto;
     }
     

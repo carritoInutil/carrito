@@ -9,7 +9,22 @@ package Modelo;
  *
  * @author hp
  */
-public class CUsuarios {
+public class CUsuarios extends Registro {
+    
+    /**
+     * Default constructor
+     */
+    public CUsuarios() {
+    }
+
+    public CUsuarios(String id) {
+        super(id);
+    }
+
+    /**
+     * 
+     */
+    
     private int id_usuarios;
     private String nombre;
     private String appaterno;

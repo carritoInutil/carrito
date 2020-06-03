@@ -6,10 +6,28 @@
 <%@page import="java.util.*" %>
 <%@page import="Modelo.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page session="true" %>
+<%@page import="Controlador.*" %>
+<%@ page session="true" %>
+<%
+String usuario = "";
+HttpSession sesionOk = request.getSession();
+if (sesionOk.getAttribute("usuario") == null) {
+%>
+<jsp:forward page="login.jsp">
+<jsp:param name="error" value="Es
+obligatorio identificarse"/>
+</jsp:forward>
+<%
+} else {
+usuario = (String)sesionOk.getAttribute("usuario");
+}
+%>
+
 <%
 DProducto p=CatalogoDB.obtenerProducto(Integer.parseInt(request.getParameter("id")));
 %>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -24,19 +42,19 @@ DProducto p=CatalogoDB.obtenerProducto(Integer.parseInt(request.getParameter("id
                 <th><a href="index.jsp">Catálogo</a></th>
                 <th><a href="index.jsp">Registrar Producto</a></th>
                 <th><a href="index.jsp">Ventas</a></th>
-                <th><a href="index.jsp">Cerrar sesion</a></th>
+                <th><a href="cerrarsesion.jsp">Cerrar sesion</a></th>
                 
             </tr>   
         </table>
         </header>
         <table>
-            <form method="post" action="ServletControlador">
+            <form method="post" action="ServletAgregarCarrito">
                 <tr>
                     <th rowspan="7"><img src="img/<%=p.getImg()%>" width="140" height="140"></th>
                 </tr>
                 <tr>
                     <th>Código</th>
-                    <th><input type="text" name="txtid_P" value="<%=p.getIdproduct()%>" readonly="readonly"></th>
+                    <th><input type="text" name="codigo" value="<%=p.getIdproduct()%>" readonly="readonly"></th>
                 </tr>
                 <tr>
                     <th>Nombre</th>
@@ -44,12 +62,17 @@ DProducto p=CatalogoDB.obtenerProducto(Integer.parseInt(request.getParameter("id
                 </tr>
                 <tr>
                     <th>Precio</th>
-                    <th><input type="text" name="txtprecio_P" value="<%=p.getPrecio()%>" readonly="readonly"></th>
+                    <th><input type="text" name="txtprecio_P" value="$<%=p.getPrecio()%>" readonly="readonly"></th>
                     
                 </tr>
                 <tr>
                     <th>Tipo producto</th>
                     <th><input type="text" name="txttipo_P" value="<%=p.getTipoproduct()%>" readonly="readonly"></th>
+                    
+                </tr>
+                 <tr>
+                    <th>Sub Categoria</th>
+                    <th><input type="text" name="txttipo_P" value="<%=p.getSubproduct()%>" readonly="readonly"></th>
                     
                 </tr>
                 <tr>
@@ -59,13 +82,19 @@ DProducto p=CatalogoDB.obtenerProducto(Integer.parseInt(request.getParameter("id
                 </tr>
                 <tr>
                     <th>Cantidad</th>
-                    <th><input type="number" value="1" min="1" name="cantidad_P" value="<%=p.getNomproduct()%>" ></th>
+                    <th><input type="number" value="1" min="1" name="cantidad" value="<%=p.getNomproduct()%>" ></th>
                 </tr>
                 <tr>
-                    <th colspan="3"><input type="button" name="btnAnadir" value="Añadir" ></th>
-                <input type="hidden" name="accion" value="AnadirCarrito">
+                    <th colspan="3"><input type="submit" name="btnAnadir" value="Añadir" ></th>
+               
+                </tr>
+                <tr>
+                    <th><input type="file"></th>
                 </tr>
             </form>
+                <tr>
+                    <th><%=usuario%></th>
+                </tr>
         </table>
     </body>
 </html>

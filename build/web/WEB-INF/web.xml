@@ -8,6 +8,18 @@
         <servlet-name>ServletVerificarUsuario</servlet-name>
         <servlet-class>Controlador.ServletVerificarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Registrar</servlet-name>
+        <servlet-class>Controlador.Registrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletAgregarCarrito</servlet-name>
+        <servlet-class>Controlador.ServletAgregarCarrito</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SRegistrarUser</servlet-name>
+        <servlet-class>Controlador.SRegistrarUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletControlador</servlet-name>
         <url-pattern>/ServletControlador</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>ServletVerificarUsuario</servlet-name>
         <url-pattern>/ServletVerificarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registrar</servlet-name>
+        <url-pattern>/Registrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAgregarCarrito</servlet-name>
+        <url-pattern>/ServletAgregarCarrito</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SRegistrarUser</servlet-name>
+        <url-pattern>/SRegistrarUser</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

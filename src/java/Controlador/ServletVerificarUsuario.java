@@ -40,8 +40,9 @@ public class ServletVerificarUsuario extends HttpServlet {
             
             HttpSession sesionOk = request.getSession();
             sesionOk.setAttribute("usuario",user);
-               
-            if(u.getPrivilegio()==1){
+            
+          
+            if(u.getPrivilegio()==2){
                 //El usuario tiene el privilegio de cliente
                 response.sendRedirect("catalogoC.jsp");
             }else{

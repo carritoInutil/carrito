@@ -51,7 +51,7 @@ usuario = (String)sesionOk.getAttribute("usuario");
         <table border="0" align="center" width="1000">
             
             <% 
-            ArrayList<DProducto> catalogo=CatalogoDB.obtenerProductos();
+            ArrayList<DProducto> catalogo=CatalogoDB.obtenerProductosA();
             int salto=0;
             for(DProducto p : catalogo){
             

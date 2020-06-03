@@ -51,7 +51,7 @@ usuario = (String)sesionOk.getAttribute("usuario");
         <table border="0" align="center" width="1000">
             
             <% 
-            ArrayList<DProducto> catalogo=CatalogoDB.obtenerProductos();
+            ArrayList<DProducto> catalogo=CatalogoDB.obtenerProductosR();
             int salto=0;
             for(DProducto p : catalogo){
             
@@ -63,7 +63,7 @@ usuario = (String)sesionOk.getAttribute("usuario");
                     $ <%=p.getPrecio()%><p>
                 <p><a href="agregar.jsp?id=<%=p.getIdproduct()%>">Añadir</a></p>
                 <%=p.getTipoproduct()%> <br>
-                <%=p.getSubproduct()%> <br>
+                
                 
                     
                     

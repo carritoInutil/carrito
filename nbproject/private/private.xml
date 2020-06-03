@@ -3,12 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/index.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCM.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/DVentaDB.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCH.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Controlador/SRegistrarUser.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/DVenta.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCC.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCA.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCR.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Controlador/ServletAgregarCarrito.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/cerrarsesion.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/Registro.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/DProducto.java</file>
             <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/UsuariosDB.java</file>
-            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/error.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoCL.jsp</file>
             <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/catalogoC.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/CProducto.java</file>
             <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/CUsuarios.java</file>
             <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Controlador/ServletVerificarUsuario.java</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/web/agregar.jsp</file>
+            <file>file:/C:/Luis/PROGRA/PSW/CarritoInutil/src/java/Modelo/CatalogoDB.java</file>
         </group>
     </open-files>
 </project-private>

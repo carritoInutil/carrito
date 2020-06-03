@@ -15,7 +15,7 @@
         <table border="2" borderColor="white" width="50%" id="tabla">
             <tr>
                 <td width="100%" >
-                    <form action="" >
+                    <form method="post" action="SRegistrarUser">
                         <h2 align="center">
                             Datos a Insertados
                         </h2>
@@ -78,7 +78,7 @@
                             
                         </table>
                         
-                                <input type="submit" value="Modificar Usuario" name="btnEdit" id="boton">
+                                <input type="submit" value="Registrar" id="boton">
                         
                             
                     </form>

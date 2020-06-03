@@ -11,19 +11,21 @@ package Modelo;
  */
 public class DProducto {
     private String tipoproduct;
+    private String subproduct;
+    private int idproduct;
     private String nomproduct;
     private double precio;
     private int stock;
     private String img;
-    private int idproduct;
 
-    public DProducto(String tipoproduct, String nomproduct, double precio, int stock, String img, int idproduct) {
+    public DProducto(String tipoproduct, String subproduct, int idproduct, String nomproduct, double precio, int stock, String img) {
         this.tipoproduct = tipoproduct;
+        this.subproduct = subproduct;
+        this.idproduct = idproduct;
         this.nomproduct = nomproduct;
         this.precio = precio;
         this.stock = stock;
         this.img = img;
-        this.idproduct = idproduct;
     }
 
     public String getTipoproduct() {
@@ -32,6 +34,22 @@ public class DProducto {
 
     public void setTipoproduct(String tipoproduct) {
         this.tipoproduct = tipoproduct;
+    }
+
+    public String getSubproduct() {
+        return subproduct;
+    }
+
+    public void setSubproduct(String subproduct) {
+        this.subproduct = subproduct;
+    }
+
+    public int getIdproduct() {
+        return idproduct;
+    }
+
+    public void setIdproduct(int idproduct) {
+        this.idproduct = idproduct;
     }
 
     public String getNomproduct() {
@@ -65,14 +83,8 @@ public class DProducto {
     public void setImg(String img) {
         this.img = img;
     }
+    
 
-    public int getIdproduct() {
-        return idproduct;
-    }
-
-    public void setIdproduct(int idproduct) {
-        this.idproduct = idproduct;
-    }
     
     
     
